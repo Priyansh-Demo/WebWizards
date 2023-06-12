@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - WebWizards</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Logo-White(Transparent).png  "
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" 
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- -----NAVBAR----- -->
+      <nav>
+        <img
+          src="./images/Logo-Red(LightTheme).png"
+          alt="Logo"
+          class="logo-light"
+        />
+        <img
+          src="./images/Logo-Red(DarkTheme).png"
+          alt="Logo"
+          class="logo-dark"
+        />
+        <ul class="nav-links">
+          <li>
+            <a href="#about"
+              ><div class="link">About Us</div>
+              <span id="line1" class="line"></span>
+              <span id="line2" class="line"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#course"
+              ><div class="link">Course</div>
+              <span id="line1" class="line"></span>
+              <span id="line2" class="line"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><div class="link">Contact</div>
+              <span id="line1" class="line"></span>
+              <span id="line2" class="line"></span
+            ></a>
+          </li>
+        </ul>
+        <div class="theme-part">
+          <a href="#" class="login-btn"
+            ><div class="text">Login</div>
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="ml-2 text-xl"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line></svg
+          ></a>
+          <div class="theme-btn">
+            <div class="moon">
+              <svg
+                stroke="currentColor"
+                fill="#f73939"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                font-size="32"
+                cursor="pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M9.37 5.51A7.35 7.35 0 009.1 7.5c0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27A7.014 7.014 0 0112 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49zM12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
+                ></path>
+              </svg>
+            </div>
+            <div class="sun">
+              <svg
+                stroke="currentColor"
+                fill="#fff"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                font-size="32"
+                cursor="pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M12 9c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- -----HOMEPAGE(LANDING PAGE)----- -->
+      <section id="home">
+        <header>
+          <div class="hero-text">
+            <div class="wrapper">
+              <h1 class="static-text"><span>Learn</span> with</h1>
+              <ul class="dynamic-text-light">
+                <li><span>Web</span></li>
+                <li><span>Wizards</span></li>
+              </ul>
+            </div>
+            <h3 style="margin-bottom: 50px" class="hero-des">
+              The Ultimate Guide To<br />
+              Web Development.
+            </h3>
+            <div class="hero-btn">
+              <a href="#" class="course">View Courses</a>
+              <a
+                href="https://www.youtube.com/@priyanshpatel-india"
+                class="video"
+                target="_blank"
+                >Watch Video</a
+              >
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="./images/Laptop.png" alt="laptop" class="laptop" />
+            <img src="./images/Phone.png" alt="phone" class="phone" />
+            <img src="./images/Hero-Img.png" alt="Hero-Img" />
+          </div>
+        </header>
+      </section>
+      <!-- -----ABOUT----- -->
+      <main>
+        <section id="about">
+          <div class="about-img">
+            <img src="./images/Meeting.png" alt="About Us" class="about-img" />
+          </div>
+          <div class="about-description">
+            <h1 class="about-heading">About Us</h1>
+            <hr />
+            <ul class="about-text">
+              <span>
+                We believe that everyone, irrespective of their college or
+                branch, technical or non-technical background can make it big.
+                WebWizards is an initiative built on this thought.
+              </span>
+              <span>
+                We provide hands-on assistance and have an inclusive community
+              </span>
+              <span>
+                Get guidance with career, Open Source, and Internships, jobs
+                around the world.
+              </span>
+              <span>
+                We are also having various events weekly or monthly. Do
+                participate in those events to make your skills enhance.
+              </span>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <h1>Skills get you the job, not your degree.</h1>
+        <div class="join-btn"><a href="#">join now</a></div>
+        <div class="footer-container">
+          <div class="right">
+            <img src="./images/Logo-Red(DarkTheme).png" alt="logo" class="logo-dark-footer"/>
+            <img src="./images/Logo-Red(LightTheme).png" alt="logo" class="logo-light-footer"/>
+            <h5>#BreakTheWeb</h5>
+          </div>
+          <div class="left">
+            <h2>Follow us on</h2>
+            <ul>
+              <li>
+                <a href="#"><img src="./images/youtube.svg" alt="youtube" /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/linkedin.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/telegram.svg" alt="telegran" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
