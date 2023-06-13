@@ -20,7 +20,7 @@ body {
   color: var(--typing-bg-dark);
   scroll-behavior: smooth;
   background: var(--typing-bg-light);
-  transition: 0.25s
+  transition: 0.25s;
 }
 ::selection {
   background: var(--main-color);
@@ -40,7 +40,7 @@ li {
 }
 /* -----NAVBAR----- */
 nav {
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   width: 100%;
   display: flex;
@@ -223,7 +223,7 @@ header {
 @keyframes typing {
   100% {
     left: 100%;
-    margin: 0 -35px 0 35px;
+    margin: 0 -45px 0 45px;
   }
 }
 .hero-text h3 {
@@ -248,13 +248,12 @@ header {
   border: 2px solid var(--main-color);
 }
 /* -----ABOUT----- */
-#about {
+.about {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 0 5%;
-  padding: 80px 0;
 }
 .about-img {
   width: 100%;
@@ -267,17 +266,20 @@ header {
   flex-basis: 50%;
 }
 .about-description h1 {
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 35px;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
+  position: relative;
 }
-hr {
-  height: 5px;
-  width: 30%;
-  border-radius: 10px;
+.about-description h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 10px;
+  width: 100%;
   background: var(--main-color);
-  border: none;
+  border-radius: 15px;
 }
 .about-description .about-text {
   display: flex;
@@ -285,8 +287,7 @@ hr {
 }
 .about-text {
   margin: 5%;
-  padding: 30px 0;
-  font-size: 16px;
+  font-size: 17px;
   padding-left: 10px;
 }
 .about-text span {
@@ -302,6 +303,74 @@ hr {
   width: 1.2rem;
   top: 0px;
 }
+/* -----COURSES----- */
+.course {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.course h1 {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: var(--typing-bg-dark);
+  display: inline-block;
+}
+.course h1::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background: var(--main-color);
+  height: 7px;
+  width: 100%;
+  border-radius: 15px;
+}
+.course .course-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 0;
+  align-items: center;
+}
+.course-container div {
+  width: 300px;
+  height: 400px;
+  background: var(--typing-bg-dark);
+  position: relative;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.course-container div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 1;
+}
+.course-container div .text {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 0;
+  color: var(--typing-bg-light);
+}
+.course-container div .text h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.course-container div .text a {
+  padding: 15px 25px;
+  background: transparent;
+  border: 2px solid var(--typing-bg-light);
+  border-radius: 10px;
+  color: var(--typing-bg-light);
+}
+
 /* -----FOOTER----- */
 footer {
   background: var(--typing-bg-dark);
@@ -427,7 +496,7 @@ footer .footer-container .left ul svg {
     font-size: 35px;
   }
   /* -----ABOUT----- */
-  #about {
+  .about {
     flex-direction: row;
     margin: 0 40px;
     padding: 100px 0;
@@ -442,10 +511,6 @@ footer .footer-container .left ul svg {
     font-size: 48px;
     margin-top: 0;
   }
-  hr {
-    height: 10px;
-    width: 20%;
-  }
   .about-text {
     padding: 30px 0;
     font-size: 22px;
@@ -457,6 +522,33 @@ footer .footer-container .left ul svg {
     height: 1.6rem;
     width: 1.6rem;
     top: 0px;
+  }
+
+  /* -----COURSE----- */
+  .course {
+    padding: 100px 0;
+  }
+  .course h1 {
+    font-size: 50px;
+    bottom: -10px;
+    margin-bottom: 50px;
+  }
+  .course h1::after {
+    height: 10px;
+  }
+  .course .course-container {
+    flex-direction: row;
+  }
+  .course-container div {
+    width: 400px;
+    height: 500px;
+    margin: 0;
+  }
+  .course-container div .text {
+    height: 200px;
+  }
+  .course-container div .text h3 {
+    margin-bottom: 40px;
   }
   /* -----FOOTER----- */
   footer {
@@ -471,5 +563,8 @@ footer .footer-container .left ul svg {
   }
   footer .footer-container {
     flex-direction: row;
+  }
+  footer .footer-container .right {
+    padding: 0;
   }
 }
