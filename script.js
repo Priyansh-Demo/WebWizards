@@ -27,9 +27,10 @@ themeBtn.addEventListener("click", () => {
   if (logoLightEl.display === "block") {
     rootEl.style.setProperty("--typing-bg-light", "#131516");
     rootEl.style.setProperty("--typing-bg-dark", "#e2d9d5");
+    rootEl.style.setProperty("--shadow-color", "rgba(255,255,255,0.4)");
     logoLightEl.display = "none";
     logoDarkEl.display = "block";
-    navBar.boxShadow = "0 3px 10px rgba(247,57,57,0.2)";
+    navBar.boxShadow = "0 3px 10px rgba(247,57,57,0.4)";
     moonEL.display = "none";
     sunEl.display = "block";
     logoDarkFooter.display = "none";
@@ -37,6 +38,7 @@ themeBtn.addEventListener("click", () => {
   } else {
     rootEl.style.setProperty("--typing-bg-light", "#e2d9d5");
     rootEl.style.setProperty("--typing-bg-dark", "#131516");
+    rootEl.style.setProperty("--shadow-color", "rgba(0,0,0,0.4)");
     logoLightEl.display = "block";
     logoDarkEl.display = "none";
     navBar.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
