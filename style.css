@@ -12,6 +12,7 @@
   --theme-color: #131516;
   --typing-bg-light: #e2d9d5;
   --typing-bg-dark: #131516;
+  --shadow-color: rgba(19, 21, 22, 0.4);
 }
 html,
 body {
@@ -340,6 +341,7 @@ header {
   position: relative;
   border-radius: 10px;
   margin: 30px 0;
+  box-shadow: 0;
 }
 .course-container div img {
   position: absolute;
@@ -417,6 +419,7 @@ footer .footer-container .right {
 }
 footer .footer-container .right img {
   width: 50%;
+  cursor: pointer;
 }
 footer .footer-container .right h5 {
   font-style: italic;
@@ -435,6 +438,12 @@ footer .footer-container .left ul svg {
   stroke: var(--main-color);
   fill: var(--main-color);
 }
+footer .footer-container .left ul i {
+  color: var(--main-color);
+  font-size: 32px;
+  margin: -5px 0;
+}
+
 
 /* -----RESPOONSIVE-PAGE----- */
 @media (min-width: 1024px) {
@@ -543,6 +552,8 @@ footer .footer-container .left ul svg {
     width: 400px;
     height: 500px;
     margin: 0;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+
   }
   .course-container div .text {
     height: 200px;
